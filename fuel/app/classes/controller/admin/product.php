@@ -39,7 +39,6 @@ class Controller_Admin_Product extends Controller_Admin
 			if ($val->run())
 			{
 				$product = Model_Product::forge(array(
-					'id' => Input::post('id'),
 					'name' => Input::post('name'),
 					'description' => Input::post('description'),
 					'price' => Input::post('price'),

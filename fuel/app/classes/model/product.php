@@ -3,7 +3,6 @@ class Model_Product extends \Orm\Model
 {
 	protected static $_properties = array(
 		'id',
-		'id',
 		'name',
 		'description',
 		'price',
@@ -26,7 +25,6 @@ class Model_Product extends \Orm\Model
 	public static function validate($factory)
 	{
 		$val = Validation::forge($factory);
-		$val->add_field('id', 'Id', 'required|valid_string[numeric]');
 		$val->add_field('name', 'Name', 'required|max_length[40]');
 		$val->add_field('description', 'Description', 'required|max_length[80]');
 		$val->add_field('price', 'Price', 'required');
