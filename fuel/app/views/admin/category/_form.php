@@ -1,12 +1,6 @@
 <?php echo Form::open(); ?>
 	<fieldset>
 		<div class="form-group">
-			<?php echo Form::label('Id', 'id', array('class' => 'control-label')); ?>
-
-			<?php echo Form::input('id', Input::post('id', isset($category) ? $category->id : ''), array('class' => 'form-control', 'placeholder' => 'Id')); ?>
-		</div>
-
-		<div class="form-group">
 			<?php echo Form::label('Name', 'name', array('class' => 'control-label')); ?>
 
 			<?php echo Form::input('name', Input::post('name', isset($category) ? $category->name : ''), array('class' => 'form-control', 'placeholder' => 'Name')); ?>

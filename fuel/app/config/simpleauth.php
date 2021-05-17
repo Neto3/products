@@ -90,6 +90,8 @@ return array(
 		 * 50   => array('name' => 'Moderators', 'roles' => array('user', 'moderator')),
 		 * 100  => array('name' => 'Administrators', 'roles' => array('user', 'moderator', 'admin')),
 		 */
+
+		100  => array('name' => 'Administrators', 'roles' => array('user', 'moderator', 'admin')),
 	),
 
 	/**
