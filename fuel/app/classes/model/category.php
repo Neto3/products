@@ -3,7 +3,6 @@ class Model_Category extends \Orm\Model
 {
 	protected static $_properties = array(
 		'id',
-		'id',
 		'name',
 		'created_at',
 		'updated_at',
@@ -23,7 +22,6 @@ class Model_Category extends \Orm\Model
 	public static function validate($factory)
 	{
 		$val = Validation::forge($factory);
-		$val->add_field('id', 'Id', 'required|valid_string[numeric]');
 		$val->add_field('name', 'Name', 'required|max_length[40]');
 
 		return $val;

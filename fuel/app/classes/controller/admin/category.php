@@ -39,7 +39,6 @@ class Controller_Admin_Category extends Controller_Admin
 			if ($val->run())
 			{
 				$category = Model_Category::forge(array(
-					'id' => Input::post('id'),
 					'name' => Input::post('name'),
 				));
 
