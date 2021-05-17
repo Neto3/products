@@ -8,6 +8,7 @@ return array (
       array (
         0 => '001_create_products',
         1 => '002_create_categories',
+        2 => '003_add_category_to_products',
       ),
     ),
     'module' => 

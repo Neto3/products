@@ -228,7 +228,7 @@ return array(
 		 * ---------------------------------------------------------------------
 		 */
 
-		// 'token_salt' => 'put your salt value here to make the token more secure',
+		'token_salt' => 'Ep1328JVsJm¨0KJhgW#¨*#Sxt@@nZ4jUKWuqiQIA2(vMDWXQzM@JxrHV9Lah(bS7#Rh%HQyRruz9!pC(meVwvpW053deliFLqzlr',
 
 		/**
 		 * ---------------------------------------------------------------------

@@ -12,6 +12,7 @@
 
 class Controller_Admin extends Controller_Base
 {
+
 	public $template = 'admin/template';
 
 	public function before()
