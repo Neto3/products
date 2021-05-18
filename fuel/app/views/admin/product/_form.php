@@ -24,6 +24,10 @@
 			<?php echo Form::input('image_path', Input::post('image_path', isset($product) ? $product->image_path : ''), array('class' => 'form-control', 'placeholder' => 'Image path')); ?>
 		</div>
 
+		<?php
+			var_dump($categories);
+		?>
+
 		<div class="form-group">
 			<?php echo Form::submit('submit', 'Save', array('class' => 'btn btn-primary')); ?>
 

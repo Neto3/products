@@ -19,6 +19,8 @@ class Model_Category extends \Orm\Model
 		),
 	);
 
+	protected static $_has_many = array('product');
+
 	public static function validate($factory)
 	{
 		$val = Validation::forge($factory);

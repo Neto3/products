@@ -22,6 +22,8 @@ class Model_Product extends \Orm\Model
 		),
 	);
 
+	protected static $_belongs_to = array('category');
+
 	public static function validate($factory)
 	{
 		$val = Validation::forge($factory);

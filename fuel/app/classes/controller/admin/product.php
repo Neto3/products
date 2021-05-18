@@ -17,6 +17,8 @@ class Controller_Admin_Product extends Controller_Admin
 
 		$this->template->set_global('pagination', $pagination, false);
 
+		$data['y'] = 'oi';
+
 		$this->template->title   = "Products";
 		$this->template->content = View::forge('admin/product/index', $data);
 	}
@@ -62,6 +64,8 @@ class Controller_Admin_Product extends Controller_Admin
 				Session::set_flash('error', $val->error());
 			}
 		}
+
+		$this->template->set_global('categories', Model_Category::find('all'));
 
 		$this->template->title = "Products";
 		$this->template->content = View::forge('admin/product/create');
